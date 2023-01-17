@@ -1,0 +1,28 @@
+.mainAboutMe {
+    margin-bottom: 200px;
+} 
+
+.boxAboutMe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.boxAboutMe01 ,.boxAboutMe02 ,.boxAboutMe03 {
+    width: 80%;
+    margin:auto;
+    text-align: center;
+    padding: 5px;
+}
+.imgAboutMe {
+    width: 90%;
+}
+.titulo_Secundario {
+    padding: 5px;
+}
+.Parrafo_secundario { 
+    font-size: 20px;
+    margin: 0 20px;
+}
+.boxAboutMe04 {
+    width: 70%;
+}
