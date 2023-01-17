@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Serif NP Hmong", serif;
+  background-color: #cdd9e1;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navegador {
+  background-color: #7B89A6;
+  position: relative;
+  height: 70px;
+  width: 100%;
+}
+.navegador .fa-bars {
+  display: none;
+}
+@media (max-width: 576px) {
+  .navegador .fa-bars {
+    display: block;
+    color: white;
+    font-size: 30px;
+    padding: 20px;
+  }
+  .navegador .fa-bars:hover + ul {
+    left: 0;
+  }
+}
+.navegador ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: end;
+}
+@media (max-width: 576px) {
+  .navegador ul {
+    position: absolute;
+    flex-direction: column;
+    background-color: #7B89A6;
+    width: 150px;
+    height: 280px;
+    left: -300px;
+    transition: 0.2s;
+    justify-content: center;
+    align-items: initial;
+  }
+  .navegador ul:hover {
+    left: 0;
+  }
+}
+.navegador ul li {
+  display: inline-block;
+}
+.navegador ul a {
+  display: block;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  padding: 20px 20px;
+  font-size: 20px;
+}
+
+footer {
+  background-color: #A9C6D9;
+  height: 70px;
+  width: 100%;
+}
+
+.navfoot ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+.navfoot ul li {
+  display: inline-block;
+}
+.navfoot ul li a {
+  display: block;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  padding: 20px 20px;
+  font-size: 20px;
+}
+
+/* home*/
+p {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+h2 {
+  color: black;
+  font-size: 25px;
+}
+
+.boxindex {
+  display: grid;
+  height: 500px;
+  justify-content: center;
+  align-content: center;
+  grid-template-columns: 300px 500px;
+  grid-template-rows: 50px 200px 50px;
+  gap: 10px;
+  grid-template-areas: "boxindex01 boxindex02" "boxindex01 boxindex03" "boxindex01 boxindex04";
+}
+@media (max-width: 820px) {
+  .boxindex {
+    height: auto;
+    grid-template-columns: 300px;
+    grid-template-rows: 300px 50px 300px 50px;
+    grid-template-areas: "boxindex01" "boxindex02 " "boxindex03" "boxindex04";
+    padding-top: 50px;
+    gap: 10px;
+  }
+}
+
+.boxindex01 {
+  grid-area: boxindex01;
+}
+
+.boxindex02 {
+  grid-area: boxindex02;
+}
+
+.boxindex03 {
+  grid-area: boxindex03;
+}
+
+.boxindex04 {
+  grid-area: boxindex04;
+}
+
+.fotoperfil {
+  width: 300px;
+}
+
+h1 {
+  font-size: 30px;
+  color: black;
+  padding: 5px;
+  text-align: left;
+  font-style: italic;
+}
+@media (max-width: 820px) {
+  h1 {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 820px) {
+  .boxindex01 .boxindex02 .boxindex03 .boxindex04 {
+    margin: 10px;
+    padding: 10px;
+  }
+}/*# sourceMappingURL=style.css.map */

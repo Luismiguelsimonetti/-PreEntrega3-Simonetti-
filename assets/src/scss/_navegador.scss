@@ -1,0 +1,50 @@
+.navegador {
+    background-color: #7B89A6;
+    position: relative;
+    height: 70px;
+    width: 100%;
+    .fa-bars{
+        display: none;
+        @media (max-width:576px){
+            display:block;
+            color: white;
+            font-size: 30px;
+            padding: 20px;
+            &:hover + ul{ 
+                left: 0;
+            }
+        }
+        }
+        ul {
+            display: flex;
+            list-style-type: none;
+            justify-content: end;
+            @media (max-width:576px){
+                position: absolute;
+                flex-direction: column;
+                background-color: #7B89A6;
+                width: 150px;
+                height: 280px;
+                left: -300px;
+                transition: 0.2s;
+                justify-content: center;
+                align-items:initial;
+                &:hover{ 
+                    left: 0;
+                }
+            }
+
+            li{
+                display: inline-block;
+            }
+            a {
+                display: block;
+                color:rgb(255, 255, 255);
+                text-decoration: none;
+                padding: 20px 20px; 
+                font-size: 20px;
+            } 
+}
+}
+
+

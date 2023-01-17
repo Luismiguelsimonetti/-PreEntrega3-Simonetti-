@@ -1,0 +1,21 @@
+@import "reset";
+body{
+    font-family: 'Noto Serif NP Hmong', serif;
+    background-color: #cdd9e1;
+}
+ul{
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+@import "navegador";
+@import "footer";
+@import "home";
+
+
+
+
+
+

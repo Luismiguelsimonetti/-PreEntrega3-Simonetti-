@@ -1,0 +1,23 @@
+
+footer {
+    background-color:#A9C6D9;
+    height: 70px;
+    width: 100%;
+}
+
+.navfoot ul{
+    list-style-type: none;
+    display:flex;
+    justify-content: center;
+    li{
+        display: inline-block;
+        a {
+            display: block;
+            color:rgb(255, 255, 255);
+            text-decoration: none;
+            padding: 20px 20px; 
+            font-size: 20px;
+        }
+    }
+}
+
