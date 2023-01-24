@@ -1,0 +1,51 @@
+.formulario{
+    padding: 30px;
+    display: grid;
+    max-width: 700px;
+    margin: 10px auto;
+    border-radius: 10px;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr 1fr 30px;
+    grid-template-areas:  "titulo titulo"
+                          "nameandsurname  email" 
+                          "subjet  subjet"   
+                          "message message"
+                            "btn   btn";
+        
+}
+
+.formulario h3:nth-child(1){
+  grid-area: titulo;
+}
+.formulario label:nth-child(2){
+  grid-area: nameandsurname;
+}
+.formulario label:nth-child(3){
+  grid-area: email;
+}
+.formulario label:nth-child(4){
+  grid-area: subjet;
+}
+.formulario label:nth-child(5){
+  grid-area: message;
+}
+.formulario button:nth-child(6){
+  grid-area: btn;
+}
+
+
+.formulario > label {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.formulario > label > input, .formulario > label > textarea{
+  background-color: transparent;
+  border: 0;
+  border-bottom: 1px;
+  outline: none;
+}
+.formulario > label > textarea {
+  height: 100px;
+}

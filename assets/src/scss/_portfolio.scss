@@ -29,11 +29,11 @@
     width: 300px;
     padding: 5px;
     margin: 20px;
+    a {
+        text-decoration: none;
+    }
 }
 
-.EjemploPortfolio a {
-    text-decoration: none;
-}
 
 .EjemploPortfolio__img {
     width: 100%;

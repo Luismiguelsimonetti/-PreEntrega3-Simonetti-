@@ -18,7 +18,7 @@ a {
 }
 
 .navegador {
-  background-color: #7B89A6;
+  background-color: #5A6273;
   position: relative;
   height: 70px;
   width: 100%;
@@ -46,7 +46,7 @@ a {
   .navegador ul {
     position: absolute;
     flex-direction: column;
-    background-color: #7B89A6;
+    background-color: #5A6273;
     width: 150px;
     height: 280px;
     left: -300px;
@@ -70,7 +70,7 @@ a {
 }
 
 footer {
-  background-color: #A9C6D9;
+  background-color: #8090A6;
   height: 70px;
   width: 100%;
 }
@@ -91,6 +91,19 @@ footer {
   font-size: 20px;
 }
 
+h1 {
+  font-size: 30px;
+  color: #5A6273;
+  padding: 5px;
+  text-align: left;
+  font-style: italic;
+}
+@media (max-width: 820px) {
+  h1 {
+    font-size: 22px;
+  }
+}
+
 p {
   font-size: 20px;
   line-height: 30px;
@@ -105,9 +118,10 @@ h2 {
   display: grid;
   height: 500px;
   justify-content: center;
+  align-items: center;
   align-content: center;
   grid-template-columns: 300px 500px;
-  grid-template-rows: 50px 200px 50px;
+  grid-template-rows: 100px 150px 50px;
   gap: 10px;
   grid-template-areas: "boxindex01 boxindex02" "boxindex01 boxindex03" "boxindex01 boxindex04";
 }
@@ -128,10 +142,12 @@ h2 {
 
 .boxindex02 {
   grid-area: boxindex02;
+  align-self: end;
 }
 
 .boxindex03 {
   grid-area: boxindex03;
+  align-self: start;
 }
 
 .boxindex04 {
@@ -140,19 +156,6 @@ h2 {
 
 .fotoperfil {
   width: 300px;
-}
-
-h1 {
-  font-size: 30px;
-  color: black;
-  padding: 5px;
-  text-align: left;
-  font-style: italic;
-}
-@media (max-width: 820px) {
-  h1 {
-    font-size: 22px;
-  }
 }
 
 .mainAboutMe {
@@ -219,7 +222,6 @@ h1 {
   padding: 5px;
   margin: 20px;
 }
-
 .EjemploPortfolio a {
   text-decoration: none;
 }
@@ -242,4 +244,56 @@ h1 {
 
 .imagenes:hover {
   transform: scale(1.05);
+}
+
+.formulario {
+  padding: 30px;
+  display: grid;
+  max-width: 700px;
+  margin: 10px auto;
+  border-radius: 10px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 30px;
+  grid-template-areas: "titulo titulo" "nameandsurname  email" "subjet  subjet" "message message" "btn   btn";
+}
+
+.formulario h3:nth-child(1) {
+  grid-area: titulo;
+}
+
+.formulario label:nth-child(2) {
+  grid-area: nameandsurname;
+}
+
+.formulario label:nth-child(3) {
+  grid-area: email;
+}
+
+.formulario label:nth-child(4) {
+  grid-area: subjet;
+}
+
+.formulario label:nth-child(5) {
+  grid-area: message;
+}
+
+.formulario button:nth-child(6) {
+  grid-area: btn;
+}
+
+.formulario > label {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.formulario > label > input, .formulario > label > textarea {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 1px;
+  outline: none;
+}
+
+.formulario > label > textarea {
+  height: 100px;
 }/*# sourceMappingURL=style.css.map */
