@@ -14,6 +14,18 @@
                           "subjet  subjet"   
                           "message message"
                             "btn   btn";
+                            @media (max-width: 840px) { 
+                              grid-template-columns: 1fr;
+                              grid-template-rows: 40px 1fr 1fr 1fr 1fr 2fr 60px;
+                              grid-template-areas:  "titulo"
+                                                    "texto"
+                                                    "nameandsurname"
+                                                    "email" 
+                                                    "subjet"   
+                                                    "message"
+                                                      "btn";
+                              
+                            }
              label {
                     display: flex;
                     flex-direction: column;
