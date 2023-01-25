@@ -17,6 +17,10 @@ a {
   text-decoration: none;
 }
 
+.menu_contact {
+  margin: 50px 0px;
+}
+
 .navegador {
   background-color: #5A6273;
   position: relative;
@@ -247,53 +251,71 @@ h2 {
 }
 
 .formulario {
+  box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.1);
+  color: #5A6273;
   padding: 30px;
   display: grid;
-  max-width: 700px;
+  max-width: 800px;
   margin: 10px auto;
   border-radius: 10px;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 30px;
-  grid-template-areas: "titulo titulo" "nameandsurname  email" "subjet  subjet" "message message" "btn   btn";
+  grid-template-rows: 40px 1fr 1fr 1fr 2fr 60px;
+  grid-template-areas: "titulo titulo" "texto texto" "nameandsurname  email" "subjet  subjet" "message message" "btn   btn";
+}
+.formulario label {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0px 10px;
+}
+.formulario label input, .formulario label textarea {
+  background-color: transparent;
+  border: 2px solid #B0C9D9;
+  border-radius: 10px;
+  outline: none;
+}
+.formulario label textarea {
+  height: 200px;
+}
+.formulario label input {
+  height: 50px;
 }
 
 .formulario h3:nth-child(1) {
   grid-area: titulo;
+  font-size: 30px;
+  margin: 10px;
 }
 
-.formulario label:nth-child(2) {
-  grid-area: nameandsurname;
+.formulario h4:nth-child(2) {
+  grid-area: texto;
+  font-size: 20px;
+  margin: 10px;
 }
 
 .formulario label:nth-child(3) {
-  grid-area: email;
+  grid-area: nameandsurname;
 }
 
 .formulario label:nth-child(4) {
-  grid-area: subjet;
+  grid-area: email;
 }
 
 .formulario label:nth-child(5) {
+  grid-area: subjet;
+}
+
+.formulario label:nth-child(6) {
   grid-area: message;
 }
 
-.formulario button:nth-child(6) {
+.formulario button:nth-child(7) {
   grid-area: btn;
-}
-
-.formulario > label {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.formulario > label > input, .formulario > label > textarea {
-  background-color: transparent;
-  border: 0;
-  border-bottom: 1px;
-  outline: none;
-}
-
-.formulario > label > textarea {
-  height: 100px;
+  background-color: #B0C9D9;
+  border-radius: 5px;
+  border: 0px;
+  color: #5A6273;
+  font-size: 15px;
+  margin: 10px;
+  margin-top: 20px;
 }/*# sourceMappingURL=style.css.map */
