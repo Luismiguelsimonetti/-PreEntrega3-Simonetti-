@@ -1,8 +1,21 @@
+.box_main {
+    margin-top: 50px;
+}
+
+.titulo_Secundario{
+    font-size: 35px;
+    color: #5A6273;
+}
+
 .box_main01 ,.box_main02{
     width: 80%;
     margin:auto;
     text-align: center;
     padding: 5px;
+}
+
+.box_main02{
+    margin-bottom: 50px;
 }
 
 .titulo_portfolio {
@@ -53,3 +66,4 @@
 .imagenes:hover {
     transform: scale(1.05);
 }
+

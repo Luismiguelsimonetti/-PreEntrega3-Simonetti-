@@ -1,0 +1,42 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: #ffeee4;
+    background-image: url(../img/fondo-pasteleria.png);
+    background-size: cover;
+  }
+h1 {
+    color: black;
+    text-align: center;
+    font-style: italic;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.wimi_logo {
+    width: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+.wimi_logo img {
+    width: 30%;
+}
+
+.navbar{
+    background-color: #9c5f49 !important;
+}
+
+.carousel-home {
+    width: auto;
+}
+.card-home {
+    width: auto;
+}
+
