@@ -4,23 +4,19 @@ body{
     font-family: 'Noto Serif NP Hmong', serif;
     background-color: #cdd9e1;
 }
-ul{
-    list-style: none;
-}
-a {
-    text-decoration: none;
-}
+
 .menu_contact {
     margin: 50px 0px;
 }
 
 @import "navegador";
-@import "aboutme";
 @import "footer";
 @import "home";
-@import "portfolio";
+@import "aboutme";
 @import "formulario";
+@import "portfolio";
 @import "buttons";
+
 
 
 

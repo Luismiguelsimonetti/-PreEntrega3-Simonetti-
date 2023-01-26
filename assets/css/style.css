@@ -4,17 +4,17 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: "Noto Serif NP Hmong", serif;
-  background-color: #cdd9e1;
-}
-
 ul {
   list-style: none;
 }
 
 a {
   text-decoration: none;
+}
+
+body {
+  font-family: "Noto Serif NP Hmong", serif;
+  background-color: #cdd9e1;
 }
 
 .menu_contact {
@@ -74,83 +74,6 @@ a {
   font-size: 20px;
 }
 
-.mainAboutMe {
-  display: flex;
-  justify-content: center;
-}
-
-.boxAboutMe {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
-  align-items: center;
-  row-gap: 10px;
-  column-gap: 10px;
-  width: 700px;
-}
-@media (max-width: 576px) {
-  .boxAboutMe {
-    width: 300px;
-  }
-}
-
-.boxAboutMe01 {
-  width: 600px;
-  background-color: 0;
-  color: white;
-  padding: 10px;
-}
-
-.boxAboutMe02 {
-  width: 300px;
-  background-color: 231;
-  color: white;
-  padding: 10px;
-}
-
-.boxAboutMe03 {
-  width: 300;
-  background-color: 231;
-  color: white;
-  padding: 10px;
-}
-
-.boxAboutMe04 {
-  width: 300px;
-  background-color: 231;
-  color: white;
-  padding: 10px;
-}
-
-.boxAboutMe05 {
-  width: 300px;
-  background-color: 231;
-  color: white;
-  padding: 10px;
-}
-
-.boxAboutMe06 {
-  width: 300px;
-  background-color: 231;
-  color: white;
-  padding: 10px;
-}
-
-.boxAboutMe07 {
-  width: 300px;
-  background-color: 231;
-  color: white;
-  padding: 10px;
-}
-
-.boxAboutMe08 {
-  width: 600px;
-  background-color: 231;
-  color: white;
-  padding: 10px;
-}
-
 footer {
   background-color: #8090A6;
   height: 70px;
@@ -178,15 +101,15 @@ footer {
   }
 }
 
-h1 {
-  font-size: 30px;
+.tituloPrincipal {
+  font-size: 35px;
   color: #5A6273;
   padding: 5px;
   text-align: left;
   font-style: italic;
 }
 @media (max-width: 820px) {
-  h1 {
+  .tituloPrincipal {
     font-size: 22px;
   }
 }
@@ -194,11 +117,7 @@ h1 {
 p {
   font-size: 20px;
   line-height: 30px;
-}
-
-h2 {
-  color: black;
-  font-size: 25px;
+  color: #5A6273;
 }
 
 .boxindex {
@@ -242,13 +161,151 @@ h2 {
   display: flex;
   align-items: center;
 }
-.boxindex04 .fa-linkedin {
-  font-size: 30px;
-  color: #5A6273;
-}
 
 .fotoperfil {
   width: 300px;
+}
+
+.tituloGeneral {
+  font-size: 35px;
+  color: #5A6273;
+  text-align: left;
+}
+
+.mainAboutMe {
+  display: flex;
+  justify-content: center;
+}
+
+.boxAboutMe {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  row-gap: 10px;
+  column-gap: 10px;
+  width: 800px;
+}
+@media (max-width: 576px) {
+  .boxAboutMe {
+    width: 300px;
+  }
+}
+
+.boxAboutMe01 {
+  width: 700px;
+  padding: 10px;
+}
+
+.boxAboutMe02 {
+  width: 700px;
+}
+
+.boxAboutMe03 {
+  width: 350px;
+}
+
+.boxAboutMe04 {
+  width: 350px;
+}
+
+.boxAboutMe05 {
+  width: 700px;
+}
+
+.boxAboutMe06 {
+  width: 350px;
+}
+
+.boxAboutMe07 {
+  width: 350px;
+}
+
+.boxAboutMe08 {
+  display: flex;
+  align-items: center;
+  width: 700px;
+}
+
+.formulario {
+  box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.1);
+  color: #5A6273;
+  padding: 30px;
+  display: grid;
+  max-width: 800px;
+  margin: 10px auto;
+  border-radius: 10px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 40px 1fr 1fr 1fr 2fr 60px;
+  grid-template-areas: "titulo titulo" "texto texto" "nameandsurname  email" "subjet  subjet" "message message" "btn   btn";
+}
+@media (max-width: 840px) {
+  .formulario {
+    grid-template-columns: 1fr;
+    grid-template-rows: 40px 1fr 1fr 1fr 1fr 2fr 60px;
+    grid-template-areas: "titulo" "texto" "nameandsurname" "email" "subjet" "message" "btn";
+  }
+}
+.formulario label {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0px 10px;
+}
+.formulario label input, .formulario label textarea {
+  background-color: transparent;
+  border: 2px solid #B0C9D9;
+  border-radius: 10px;
+  outline: none;
+}
+.formulario label textarea {
+  height: 200px;
+}
+.formulario label input {
+  height: 50px;
+}
+
+.formulario h3:nth-child(1) {
+  grid-area: titulo;
+  font-size: 30px;
+  margin: 10px;
+}
+
+.formulario h4:nth-child(2) {
+  grid-area: texto;
+  font-size: 20px;
+  margin: 10px;
+  color: #5A6273;
+}
+
+.formulario label:nth-child(3) {
+  grid-area: nameandsurname;
+}
+
+.formulario label:nth-child(4) {
+  grid-area: email;
+}
+
+.formulario label:nth-child(5) {
+  grid-area: subjet;
+}
+
+.formulario label:nth-child(6) {
+  grid-area: message;
+}
+
+.formulario button:nth-child(7) {
+  grid-area: btn;
+  background-color: #B0C9D9;
+  border-radius: 5px;
+  border: 0px;
+  color: #5A6273;
+  font-size: 15px;
+  margin: 10px;
+  margin-top: 20px;
 }
 
 .box_main01, .box_main02 {
@@ -305,86 +362,11 @@ h2 {
   transform: scale(1.05);
 }
 
-.formulario {
-  box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.1);
-  color: #5A6273;
-  padding: 30px;
-  display: grid;
-  max-width: 800px;
-  margin: 10px auto;
-  border-radius: 10px;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 40px 1fr 1fr 1fr 2fr 60px;
-  grid-template-areas: "titulo titulo" "texto texto" "nameandsurname  email" "subjet  subjet" "message message" "btn   btn";
-}
-@media (max-width: 840px) {
-  .formulario {
-    grid-template-columns: 1fr;
-    grid-template-rows: 40px 1fr 1fr 1fr 1fr 2fr 60px;
-    grid-template-areas: "titulo" "texto" "nameandsurname" "email" "subjet" "message" "btn";
-  }
-}
-.formulario label {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  padding: 0px 10px;
-}
-.formulario label input, .formulario label textarea {
-  background-color: transparent;
-  border: 2px solid #B0C9D9;
-  border-radius: 10px;
-  outline: none;
-}
-.formulario label textarea {
-  height: 200px;
-}
-.formulario label input {
-  height: 50px;
-}
-
-.formulario h3:nth-child(1) {
-  grid-area: titulo;
-  font-size: 30px;
-  margin: 10px;
-}
-
-.formulario h4:nth-child(2) {
-  grid-area: texto;
-  font-size: 20px;
-  margin: 10px;
-}
-
-.formulario label:nth-child(3) {
-  grid-area: nameandsurname;
-}
-
-.formulario label:nth-child(4) {
-  grid-area: email;
-}
-
-.formulario label:nth-child(5) {
-  grid-area: subjet;
-}
-
-.formulario label:nth-child(6) {
-  grid-area: message;
-}
-
-.formulario button:nth-child(7) {
-  grid-area: btn;
-  background-color: #B0C9D9;
-  border-radius: 5px;
-  border: 0px;
-  color: #5A6273;
-  font-size: 15px;
-  margin: 10px;
-  margin-top: 20px;
-}
-
 .button_general {
-  display: block;
-  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
   height: 30px;
   border: none;
   margin: 10px;
@@ -394,4 +376,9 @@ h2 {
   color: #cdd9e1;
   text-align: center;
   font-size: 20px;
+}
+
+.fa-linkedin {
+  font-size: 30px;
+  color: #5A6273;
 }/*# sourceMappingURL=style.css.map */

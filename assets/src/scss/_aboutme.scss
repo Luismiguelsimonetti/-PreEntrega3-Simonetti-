@@ -1,4 +1,10 @@
 
+.tituloGeneral {
+    font-size: 35px;
+    color: #5A6273;
+    text-align: left;
+}
+
 .mainAboutMe {
     display: flex;
     justify-content: center;
@@ -6,6 +12,8 @@
 }
 
 .boxAboutMe {
+    margin-top: 30px;
+    margin-bottom: 30px;
    display: flex;
    flex-direction: row;
    justify-content: center;
@@ -13,58 +21,44 @@
    align-items: center;
    row-gap: 10px;
    column-gap: 10px;
-   width: 700px;
+   width: 800px;
    @media (max-width:576px){
     width: 300px;
    }
 }
 
 .boxAboutMe01 {
-    width: 600px;
-    background-color: blue($color: #000000);
-    color:white;
+    width: 700px;
     padding: 10px;
     
 }
 .boxAboutMe02 {
-    width: 300px;
-    background-color: red($color: #e71d1d);
-    color:white;
-    padding: 10px;}
+    width: 700px;
+}
 
 .boxAboutMe03 {
-    width: 300;
-    background-color: red($color: #e71d1d);
-    color:white;
-    padding: 10px;}
+    width: 350px;
+}
 
 .boxAboutMe04 {
-    width: 300px;
-    background-color: red($color: #e71d1d);
-    color:white;
-    padding: 10px;}
+    width: 350px;
+    }
 
 .boxAboutMe05 {
-    width: 300px;
-    background-color: red($color: #e71d1d);
-    color:white;
-    padding: 10px;}
+    width: 700px;
+    }
 
 .boxAboutMe06 {
-    width: 300px;
-    background-color: red($color: #e71d1d);
-    color:white;
-    padding: 10px;}
+    width: 350px;
+    }
 
 .boxAboutMe07 {
-    width: 300px;
-    background-color: red($color: #e71d1d);
-    color:white;
-    padding: 10px;}
+    width: 350px;
+    }
   
 .boxAboutMe08 {
-    width: 600px;
-    background-color: red($color: #e71d1d);
-    color:white;
-    padding: 10px;}
+    display: flex;
+    align-items: center;
+    width: 700px;
+    ;}
     

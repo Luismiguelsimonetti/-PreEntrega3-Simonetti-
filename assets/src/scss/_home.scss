@@ -1,6 +1,6 @@
 
-h1 {
-    font-size: 30px;
+.tituloPrincipal {
+    font-size: 35px;
     color: #5A6273;
     padding: 5px;
     text-align: left;
@@ -12,11 +12,7 @@ h1 {
 p {
     font-size: 20px;
     line-height: 30px;
-}
-
-h2 {
-    color: black;
-    font-size: 25px;
+    color: #5A6273;
 }
 
  .boxindex{
@@ -62,12 +58,8 @@ h2 {
     grid-area: boxindex04;
     display: flex;
     align-items: center;
-    .fa-linkedin {
-        font-size: 30px;
-        color: #5A6273;
-    
     }
- }
+
  .fotoperfil {
     width: 300px;
  }
