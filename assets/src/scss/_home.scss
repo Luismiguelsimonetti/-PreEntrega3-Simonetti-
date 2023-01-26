@@ -26,7 +26,7 @@ h2 {
     align-items: center;
     align-content: center;
     grid-template-columns: 300px 500px;
-    grid-template-rows: 100px 150px 50px;
+    grid-template-rows: 100px 100px 100px;
     gap: 10px;
     grid-template-areas: 
         "boxindex01 boxindex02"
@@ -35,7 +35,7 @@ h2 {
         @media (max-width:820px){
             height: auto;
             grid-template-columns: 300px;
-            grid-template-rows: 300px 50px 300px 50px;
+            grid-template-rows: 300px 50px 200px 50px;
             grid-template-areas: 
             "boxindex01"
             "boxindex02 "
@@ -60,6 +60,13 @@ h2 {
  }
  .boxindex04 {
     grid-area: boxindex04;
+    display: flex;
+    align-items: center;
+    .fa-linkedin {
+        font-size: 30px;
+        color: #5A6273;
+    
+    }
  }
  .fotoperfil {
     width: 300px;

@@ -1,6 +1,7 @@
 .navegador {
     background-color: #5A6273;
     position: relative;
+    z-index:1; 
     height: 70px;
     width: 100%;
     .fa-bars{

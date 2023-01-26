@@ -24,6 +24,7 @@ a {
 .navegador {
   background-color: #5A6273;
   position: relative;
+  z-index: 1;
   height: 70px;
   width: 100%;
 }
@@ -73,6 +74,83 @@ a {
   font-size: 20px;
 }
 
+.mainAboutMe {
+  display: flex;
+  justify-content: center;
+}
+
+.boxAboutMe {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  row-gap: 10px;
+  column-gap: 10px;
+  width: 700px;
+}
+@media (max-width: 576px) {
+  .boxAboutMe {
+    width: 300px;
+  }
+}
+
+.boxAboutMe01 {
+  width: 600px;
+  background-color: 0;
+  color: white;
+  padding: 10px;
+}
+
+.boxAboutMe02 {
+  width: 300px;
+  background-color: 231;
+  color: white;
+  padding: 10px;
+}
+
+.boxAboutMe03 {
+  width: 300;
+  background-color: 231;
+  color: white;
+  padding: 10px;
+}
+
+.boxAboutMe04 {
+  width: 300px;
+  background-color: 231;
+  color: white;
+  padding: 10px;
+}
+
+.boxAboutMe05 {
+  width: 300px;
+  background-color: 231;
+  color: white;
+  padding: 10px;
+}
+
+.boxAboutMe06 {
+  width: 300px;
+  background-color: 231;
+  color: white;
+  padding: 10px;
+}
+
+.boxAboutMe07 {
+  width: 300px;
+  background-color: 231;
+  color: white;
+  padding: 10px;
+}
+
+.boxAboutMe08 {
+  width: 600px;
+  background-color: 231;
+  color: white;
+  padding: 10px;
+}
+
 footer {
   background-color: #8090A6;
   height: 70px;
@@ -93,6 +171,11 @@ footer {
   text-decoration: none;
   padding: 20px 20px;
   font-size: 20px;
+}
+@media (max-width: 450px) {
+  .navfoot ul li a {
+    padding: 20px 10px;
+  }
 }
 
 h1 {
@@ -125,7 +208,7 @@ h2 {
   align-items: center;
   align-content: center;
   grid-template-columns: 300px 500px;
-  grid-template-rows: 100px 150px 50px;
+  grid-template-rows: 100px 100px 100px;
   gap: 10px;
   grid-template-areas: "boxindex01 boxindex02" "boxindex01 boxindex03" "boxindex01 boxindex04";
 }
@@ -133,7 +216,7 @@ h2 {
   .boxindex {
     height: auto;
     grid-template-columns: 300px;
-    grid-template-rows: 300px 50px 300px 50px;
+    grid-template-rows: 300px 50px 200px 50px;
     grid-template-areas: "boxindex01" "boxindex02 " "boxindex03" "boxindex04";
     padding-top: 50px;
     gap: 10px;
@@ -156,44 +239,16 @@ h2 {
 
 .boxindex04 {
   grid-area: boxindex04;
+  display: flex;
+  align-items: center;
+}
+.boxindex04 .fa-linkedin {
+  font-size: 30px;
+  color: #5A6273;
 }
 
 .fotoperfil {
   width: 300px;
-}
-
-.mainAboutMe {
-  margin-bottom: 200px;
-}
-
-.boxAboutMe {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.boxAboutMe01, .boxAboutMe02, .boxAboutMe03 {
-  width: 80%;
-  margin: auto;
-  text-align: center;
-  padding: 5px;
-}
-
-.imgAboutMe {
-  width: 90%;
-}
-
-.titulo_Secundario {
-  padding: 5px;
-}
-
-.Parrafo_secundario {
-  font-size: 20px;
-  margin: 0 20px;
-}
-
-.boxAboutMe04 {
-  width: 70%;
 }
 
 .box_main01, .box_main02 {
@@ -325,4 +380,18 @@ h2 {
   font-size: 15px;
   margin: 10px;
   margin-top: 20px;
+}
+
+.button_general {
+  display: block;
+  width: 100px;
+  height: 30px;
+  border: none;
+  margin: 10px;
+  border-radius: 3px;
+  background-color: #5A6273;
+  text-decoration: none;
+  color: #cdd9e1;
+  text-align: center;
+  font-size: 20px;
 }/*# sourceMappingURL=style.css.map */
