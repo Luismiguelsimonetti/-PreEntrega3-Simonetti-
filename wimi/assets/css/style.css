@@ -10,12 +10,13 @@
   }
 
   body {
+    font-family: 'Playfair Display', serif;
     background-color: #ffeee4;
     background-image: url(../img/fondo-pasteleria.png);
     background-size: cover;
   }
 h1 {
-    color: #9c5f49;
+    color: #402516;
     text-align: center;
     font-style: italic;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -51,4 +52,7 @@ h1 {
     color: #9c5f49;
     font-size: 30px;
 
+}
+h3 {
+    color: #402516;
 }
