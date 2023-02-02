@@ -4,6 +4,10 @@
     padding: 0;
     box-sizing: border-box;
   }
+  
+  a {
+    text-decoration: none;
+  }
 
   body {
     background-color: #ffeee4;
@@ -39,4 +43,12 @@ h1 {
 .card-home {
     width: auto;
 }
+.card {
+    border: none ;
+}
 
+.fa-brands {
+    color: #9c5f49;
+    font-size: 30px;
+
+}
